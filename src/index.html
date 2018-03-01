@@ -12,54 +12,76 @@
   </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <form class="form-inline">
-              <input class="form-control form-control-sm mr-sm-2" type="search" placeholder="Search">
-              <button type="button" class="btn btn-outline-danger btn-sm my-2 my-sm-0"><i class="fa fa-search" aria-hidden="true"></i></button>
-            </form>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa fa-volume-control-phone fa-2x" aria-hidden="true"></i> <span>Call 077 254 2547</span></a>
-          </li>
-        </ul>
+  <header class="bd-navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+          <div class="collapse navbar-collapse">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      <a class="nav-link contact-number" href="#">
+                          <i class="fa fa-home" aria-hidden="true"></i>
+                      </a>
+                  </li>
+                  &nbsp;&nbsp;&nbsp;
+                  <li class="nav-item">
+                      <a class="nav-link contact-number" href="#">
+                          <i class="fa fa-mobile" aria-hidden="true"></i>
+                          &nbsp;
+                          <p class="number">(+94) 77 254 2547</p>
+                      </a>
+                  </li>
+                  &nbsp;&nbsp;&nbsp;
+                  <li class="nav-item">
+                      <form class="form-inline search-form">
+                          <input class="form-control form-control-sm mr-sm-2" placeholder="Search" type="search"/>
+                          <button type="button" class="btn btn-outline-danger btn-sm my-2 my-sm-0">
+                              <i class="fa fa-search sear" aria-hidden="true"></i>
+                          </button>
+                      </form>
+                  </li>
+              </ul>
+          </div>
       </div>
-    </duv>
-  </nav>
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-light second-nav">
-    <div class="container">  
-      <a class="navbar-brand" href="#">
-        <!-- <img class="iihe-logo img-fluid" src="./assets/images/logos/iihelogo.png" alt=""> -->
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Programs</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#">Student Loans</a>
-            </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Faculty</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#">Life at IIHE</a>
-            </li>
-        </ul>
+    </nav>
+    <nav id="main-nav" class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+          <a class="navbar-brand" href="#">
+              <img class="logo" src="./assets/images/logos/iihelogo.png" alt="IIHE Logo"/>
+          </a>
+          <ul id="main-menu">
+              <li class="parent">
+                  <a href="about">About IIHE<a>
+              </li>
+              <li class="parent">
+                  <a href="#">Programs</a>
+                  <ul class="sub-menu">
+                      <li><a href="http://www.freshdesignweb.com/responsive-drop-down-menu-jquery-css3-using-icon-symbol.html"><i class="icon-wrench"></i> Elements</a></li>
+                      <li><a href="http://www.freshdesignweb.com/responsive-drop-down-menu-jquery-css3-using-icon-symbol.html"><i class="icon-credit-card"></i>  Pricing Tables</a></li>
+                      <li><a href="http://www.freshdesignweb.com/responsive-drop-down-menu-jquery-css3-using-icon-symbol.html"><i class="icon-gift"></i> Icons</a></li>
+                      <li>
+                          <a class="parent" href="#"><i class="icon-file-alt"></i> Pages</a>
+                          <ul class="sub-menu">
+                              <li><a href="http://www.freshdesignweb.com/responsive-drop-down-menu-jquery-css3-using-icon-symbol.html">Full Width</a></li>
+                              <li><a href="http://www.freshdesignweb.com/responsive-drop-down-menu-jquery-css3-using-icon-symbol.html">Left Sidebar</a></li>
+                              <li><a href="http://www.freshdesignweb.com/responsive-drop-down-menu-jquery-css3-using-icon-symbol.html">Right Sidebar</a></li>
+                              <li><a href="http://www.freshdesignweb.com/responsive-drop-down-menu-jquery-css3-using-icon-symbol.html">Double Sidebar</a></li>
+                          </ul>
+                      </li>
+                  </ul>
+              </li>
+              <li class="parent">
+                  <a href="about">Faculty</a>
+              </li>
+              <li class="parent">
+                  <a href="about">Life at IIHE</a>
+              </li>
+              <li class="parent">
+                  <a href="about">Contact Us</a>
+              </li>
+          </ul>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
   <app-root>
       <div class="loader"></div>
   </app-root>
